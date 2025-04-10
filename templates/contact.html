@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Contact Us</h1>
+<div class="contact-section">
+    <form method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+        <h3>Our Info</h3>
+        <p>Email: contact@example.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Location: Remote — Worldwide 🌍</p>
+    </div>
+</div>
+{% endblock %}

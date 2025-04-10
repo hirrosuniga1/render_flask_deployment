@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="about-intro">
+        <h1>About Us</h1>
+        <p>We are a team of passionate individuals working together to create innovative solutions.</p>
+    </section>
+
+    <section class="company-values">
+        <h2>Our Values</h2>
+        <p>We believe in innovation, collaboration, and delivering the best quality to our clients.</p>
+    </section>
+
+    <section class="history">
+        <h2>Our History</h2>
+        <p>Our company was founded in 2015 with the mission to create web solutions that empower businesses to grow. Over the years, we’ve worked with numerous clients across different industries.</p>
+    </section>
+
+    <section class="milestones">
+        <h2>Our Milestones</h2>
+        <ul>
+            <li>2015: Company founded</li>
+            <li>2017: First major client</li>
+            <li>2019: Expansion to international markets</li>
+            <li>2022: Launched a new product line</li>
+        </ul>
+    </section>
+
+    <section class="team">
+        <h2>Our Core Team</h2>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='team-member1.jpg') }}" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='team-member2.jpg') }}" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Lead Developer</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Get in Touch</h2>
+        <p>We’d love to hear from you! Reach out to discuss your next project or learn more about our services.</p>
+    </section>
+{% endblock %}

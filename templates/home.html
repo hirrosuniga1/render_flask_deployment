@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="hero">
+        </div>
+        <div class="hero-text">
+            <h1>Welcome to MySite</h1>
+            <p>Your gateway to a better web experience.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Feature One</h2>
+            <p>Learn more about our first feature that enhances your online experience.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Two</h2>
+            <p>Explore how our second feature makes things simpler for you.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Three</h2>
+            <p>Discover the third feature that will revolutionize your workflow.</p>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='team-member1.jpg') }}" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Lead Developer</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='team-member2.jpg') }}" alt="Team Member 2">
+            <h3>Jane Smith</h3>
+            <p>Project Manager</p>
+        </div>
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='team-member3.jpg') }}" alt="Team Member 3">
+            <h3>Bob Johnson</h3>
+            <p>UX/UI Designer</p>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Ready to get started?</h2>
+        <p>Contact us today to take your project to the next level.</p>
+    </section>
+{% endblock %}
